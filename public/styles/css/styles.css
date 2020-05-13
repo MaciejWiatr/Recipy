@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+.recipe__list__container .recipe__list__header .new__recipe__button, .recipe__edit__container .recipe__edit__wrapper .ingredients__list .ingredient__element .ingredient__element__wrapper .ingredient__element__button--remove, .recipe__edit__container .recipe__edit__wrapper .ingredient_form .ingredient_form_button, .recipe__edit__container .recipe__edit__wrapper .recipe__button--remove {
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: 0px;
+  cursor: pointer;
+  transition: transform 0.25s ease; }
+
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh; }
+
+.recipy__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "search edit"; }
+
+.recipe__list__container {
+  min-height: 100vh !important;
+  height: 100% !important;
+  padding: 30px !important;
+  color: white;
+  grid-area: search;
+  background-color: #1c1c1c; }
+  .recipe__list__container .recipe__list__header {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .recipe__list__container .recipe__list__header .new__recipe__button:hover {
+      transform: scale(1.05) !important; }
+  .recipe__list__container #search__form {
+    margin: 20px 0px; }
+    .recipe__list__container #search__form .search__input {
+      color: white;
+      width: 100%;
+      height: 40px;
+      border-radius: 40px;
+      background-color: #323232;
+      border: none;
+      box-sizing: border-box;
+      padding-left: 15px;
+      transition: background-color 0.25 ease !important; }
+      .recipe__list__container #search__form .search__input:focus {
+        outline: none;
+        background-color: #434343; }
+  .recipe__list__container .recipe__list_wrapper .recipe__item {
+    width: 100%;
+    cursor: pointer;
+    height: 70px;
+    background-color: #323232;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.25s ease; }
+    .recipe__list__container .recipe__list_wrapper .recipe__item:hover {
+      background-color: #434343;
+      transform: scale(1.05) !important; }
+    .recipe__list__container .recipe__list_wrapper .recipe__item .recipe__item__summary {
+      margin-top: 2px;
+      color: grey; }
+
+.recipe__edit__container {
+  min-height: 100vh !important;
+  height: 100% !important;
+  padding: 30px !important;
+  grid-area: edit;
+  background-color: #f1f1f1; }
+  .recipe__edit__container .recipe__edit__wrapper {
+    display: flex;
+    flex-direction: column; }
+    .recipe__edit__container .recipe__edit__wrapper .recipe__title__input {
+      margin-top: 5px;
+      height: 50px;
+      border-radius: 5px;
+      box-sizing: border-box;
+      padding-left: 15px;
+      border: none;
+      font-size: 1rem; }
+    .recipe__edit__container .recipe__edit__wrapper .recipe__body__input {
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem;
+      resize: vertical;
+      max-width: 100%;
+      min-height: 50px;
+      border-radius: 5px;
+      box-sizing: border-box;
+      border: none;
+      padding: 15px;
+      margin: 20px 0px; }
+    .recipe__edit__container .recipe__edit__wrapper .ingredients__list {
+      list-style: none; }
+      .recipe__edit__container .recipe__edit__wrapper .ingredients__list .ingredient__element {
+        margin: 10px 0px; }
+        .recipe__edit__container .recipe__edit__wrapper .ingredients__list .ingredient__element .ingredient__element__wrapper {
+          cursor: pointer;
+          display: flex;
+          border-radius: 5px;
+          justify-content: space-between;
+          align-items: center;
+          box-sizing: border-box;
+          padding: 10px;
+          background-color: white;
+          transition: transform 0.25s ease !important; }
+          .recipe__edit__container .recipe__edit__wrapper .ingredients__list .ingredient__element .ingredient__element__wrapper:hover {
+            transform: scale(1.05) !important; }
+          .recipe__edit__container .recipe__edit__wrapper .ingredients__list .ingredient__element .ingredient__element__wrapper .ingredient__element__body {
+            width: 80%;
+            padding-left: 15px; }
+          .recipe__edit__container .recipe__edit__wrapper .ingredients__list .ingredient__element .ingredient__element__wrapper .ingredient__element__button--remove {
+            transition: all 0.25s ease; }
+            .recipe__edit__container .recipe__edit__wrapper .ingredients__list .ingredient__element .ingredient__element__wrapper .ingredient__element__button--remove:hover {
+              background-color: #c0392b;
+              color: white; }
+    .recipe__edit__container .recipe__edit__wrapper .ingredient_form {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      .recipe__edit__container .recipe__edit__wrapper .ingredient_form .ingredient_form_input {
+        width: 100%;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding-left: 15px;
+        border: none;
+        font-size: 1rem; }
+      .recipe__edit__container .recipe__edit__wrapper .ingredient_form .ingredient_form_button {
+        background-color: #27ae60;
+        color: white;
+        margin-left: 10px; }
+    .recipe__edit__container .recipe__edit__wrapper .recipe__button--remove {
+      margin-top: 20px;
+      width: 100%;
+      border: 1px solid black;
+      transition: all 0.25s ease !important; }
+      .recipe__edit__container .recipe__edit__wrapper .recipe__button--remove:hover {
+        background-color: #c0392b;
+        color: white; }
+
+/*# sourceMappingURL=styles.css.map */
